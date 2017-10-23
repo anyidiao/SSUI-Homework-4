@@ -1,0 +1,319 @@
+.App {
+  text-align: center;
+  font-family: 'Quicksand', sans-serif;
+}
+
+.App-largePillowImage {
+  position: fixed;
+  display: inline-block;
+  width: auto;
+  height: 100%;
+  z-index: -2;
+  top: 0px;
+  left: 0px;
+}
+
+.App-content{
+  margin-left: 30%;
+  padding-left: 20px;
+}
+
+.App-background{
+  position: fixed;
+  margin-left: 30%;
+  width: 70%;
+  background-color: rgba(255, 255, 255, 0.9);
+  height: 100%;
+  z-index: -1;
+}
+
+.App-navMenu{
+  position: relative;
+  display: inline-block;
+  float: right;
+  padding: 10px;
+}
+
+
+.App-navMenu-button{
+  display: inline-block;
+  float: left;
+  border: 3px solid lightgrey;
+  background-color: #8e4585;
+  color: white;
+  font-size: 14pt;
+  font-weight: bold;
+  border-radius: 5px;
+  padding: 5px;
+  margin-right: 10px;
+  cursor: default;
+}
+
+.App-navMenu-button:hover {
+  background-color: #470038;
+}
+
+.active{
+  color: white; /*#FF9999*/
+}
+.App-navMenu-button:hover{
+  text-decoration: underline;
+}
+
+.App-header {
+  padding: 20px;
+}
+
+.App-title {
+  font-family: "Comic Sans MS";
+  color: #9F6693;
+  font-size: 48pt;
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+}
+
+.App-pupIcon{
+  height: 40pt;
+  width: auto;
+  display: inline-block;
+  margin-right: .4em;
+}
+
+.App-cartIcon{
+  height: 14pt;
+  width: auto;
+  display: inline-block;
+  margin-right: 5px;
+}
+
+.App-intro {
+  text-align: left;
+  font-size: 14pt;
+  margin: auto;
+}
+
+
+.productWrapper{
+  display: inline-block;
+  padding: 20px;
+  width: 300px;
+  height: 400px;
+}
+
+.productImage{
+  width: 100%;
+}
+
+.productLabel p {
+  text-align: center;
+  font-size: 14px;
+  color: black;
+}
+
+.productTitle {
+  font-family: "Comic Sans MS";
+  font-size: 24px;
+  color: violet;
+}
+
+.productTitle:hover {
+  text-decoration: underline;
+}
+
+.App-aboutDog{
+  width: 60%;
+  height: auto;
+}
+
+.App-aboutDog-caption{
+  text-align: center;
+  font-size: 14pt;
+  margin: auto;
+}
+
+.App-aboutUs{
+  text-align: center;
+  font-size: 14pt;
+  margin: auto;
+  color: #808080;
+  font-style: italic;
+  margin-bottom: 1.5em;
+  width: 70%;
+}
+
+.detailPane{
+  position: fixed;
+  width: 30%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  background-color: rgba(178, 90, 134, 0.8);
+  border-right: 3px solid black;
+  box-shadow: 2px 0px 2px #e0e0e0;
+  padding: 10px;
+  padding-top: 100px;
+}
+
+.detailPane-inner{
+  padding: 10px;
+  background-color: white;
+}
+
+.Xout{
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  font-size: 24pt;
+  font-weight: bolder;
+  color: white;
+  cursor: default;
+}
+
+.product-link {
+  text-align: center;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.product-link:hover {
+  text-decoration: underline;
+  color: #433443;
+}
+
+.largeImage{
+  width: 20em;
+  float:left;
+  margin: 0px 50px 50px 50px;
+}
+
+.mediumImage {
+  width: 18em;
+  margin-bottom: 5px;
+}
+
+.smallImage {
+  width: 5em;
+  float: left;
+  margin: 10px 20px 10px 20px;
+}
+
+.imageBlock {
+  float: left;
+  margin: 50px 50px 50px 80px;
+}
+.container-row {
+  position: relative;
+  display: inline-block;
+  width: 70%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.container {
+  text-align: left;
+}
+
+.item {
+  border-style: solid;
+  border-radius: 3px;
+  background-color: #ECE0E9;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.intro {
+  margin: 0px 50px 50px 30px;
+}
+
+.help-text {
+  color: #594559;
+  font-size: 20px;
+}
+
+.option-text {
+  color: #866785;
+  font-size: 20px;
+}
+
+.navbar {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #5F004B;
+}
+
+.navbar-item {
+  float: left;
+}
+
+.navbar-link {
+  display: block;
+  color: #DFCCDB;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.navbar-link:hover {
+  background-color: #470038;
+}
+
+.btn {
+  background-color: #B28AB1;
+  border: none;
+  color: #FFF8FF;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 8px;
+  transition-duration: 0.4s;
+}
+
+.btn:hover {
+  background-color: #7F336F;
+  color: white;
+}
+.btn-lg {
+  font-size: 24px;
+  margin: 20px 0px 20px 20px;
+}
+
+.btn-sm {
+  font-size: 16px;
+  float: right;
+  margin: 10px 60px 10px 100px;
+}
+
+.checkout {
+  font-size: 32px;
+  text-align: right;
+  margin: 100px 100px 20px 10px;
+}
+
+body{
+  text-align: center;
+  margin: auto;
+  font-family: "Comic Sans MS";
+}
+
+h1 {
+  color: #9F6693;
+  font-size: 48px;
+}
+
+p {
+  text-align: left;
+  color: #866785;
+  font-size: 20px;
+}
+
+form {
+  color: #866785;
+  font-size: 20px;
+}
+
+li {
+  text-align: left;
+}
