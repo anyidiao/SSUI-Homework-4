@@ -1,14 +1,12 @@
 {
-  "main.css": "static/css/main.c1dbe7b2.css",
-  "main.css.map": "static/css/main.c1dbe7b2.css.map",
-  "main.js": "static/js/main.58e34ddf.js",
-  "main.js.map": "static/js/main.58e34ddf.js.map",
-  "static/media/Luna.png": "static/media/Luna.7b43fd7b.png",
-  "static/media/Ollie.png": "static/media/Ollie.b745cc36.png",
-  "static/media/baconCookie.jpg": "static/media/baconCookie.3acf8c75.jpg",
-  "static/media/bone.svg": "static/media/bone.18b81cd6.svg",
-  "static/media/dog-cookies.jpg": "static/media/dog-cookies.e03fe29d.jpg",
-  "static/media/peanutButterCookie.jpg": "static/media/peanutButterCookie.78901998.jpg",
-  "static/media/pupIcon.svg": "static/media/pupIcon.5f29f29f.svg",
-  "static/media/sausageCookie.jpg": "static/media/sausageCookie.b6c9c0b1.jpg"
+  "main.css": "static/css/main.ee748687.css",
+  "main.css.map": "static/css/main.ee748687.css.map",
+  "main.js": "static/js/main.8400c145.js",
+  "main.js.map": "static/js/main.8400c145.js.map",
+  "static/media/bed_pillow.jpg": "static/media/bed_pillow.341c0725.jpg",
+  "static/media/bgd_pillow.jpg": "static/media/bgd_pillow.f417b09b.jpg",
+  "static/media/floor_pouf_pillow.jpg": "static/media/floor_pouf_pillow.3f75541b.jpg",
+  "static/media/home_pillow.jpg": "static/media/home_pillow.383c6ea6.jpg",
+  "static/media/round_pillow.jpg": "static/media/round_pillow.49f0cd6d.jpg",
+  "static/media/shopping-cart.svg": "static/media/shopping-cart.a674d017.svg"
 }
