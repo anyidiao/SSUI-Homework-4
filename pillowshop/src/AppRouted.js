@@ -14,8 +14,10 @@ class App extends Component {
 
   constructor(props) {
     super(props);
+    var total = localStorage.getItem('total') || '0';
     this.state = {
       page: 0,
+      total_qty: parseInt(total),
     };
   }
 
@@ -30,7 +32,7 @@ class App extends Component {
             <div className = "App-navMenu">
               <div className = {"App-navMenu-button" + (this.state.page === 0 ? " active" : "")} onClick={this.navToShopPage.bind(this)}>Shop</div>
               <div className = {"App-navMenu-button" + (this.state.page === 1 ? " active" : "")} onClick={(ev) => this.setState({page: 1})} >About</div>
-              <div className = "App-navMenu-button"><img src={cartIcon} className="App-cartIcon" alt="shopping cart" />0</div>
+              <div className = "App-navMenu-button"><img src={cartIcon} className="App-cartIcon" alt="shopping cart" />{this.state.total_qty}</div>
             </div>
             <header className="App-header">
               <h1 className="App-title">Flip Stitch Pillow</h1>

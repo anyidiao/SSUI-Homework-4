@@ -4,22 +4,35 @@ import './App.css';
 class StoreItem extends Component{
   constructor(props) {
     super(props);
+    this.state = {
+      product_qty: parseInt(localStorage.getItem(this.props.name+'_qty'), 10),
+    };
   }
 
   addItem() {
-    console.log("added one " + this.props.title)
-    var prev_total = parseInt(localStorage.getItem('total') || '0')
-    localStorage.setItem('total', prev_total+1)
-    this.props.quantity = parseInt(localStorage.getItem(this.props.title+'_qty') || '0') + 1
-    localStorage.setItem(this.props.title+'_qty', this.props.quantity)
+    console.log("added one " + this.props.title);
+    var prev_total = parseInt(localStorage.getItem('total'), 10);
+    localStorage.setItem('total', prev_total+1);
+    this.props.onQtyChange(prev_total+1);
+    var product_qty = parseInt(localStorage.getItem(this.props.name+'_qty'), 10) + 1;
+    console.log(this.props.name+'_qty')
+    localStorage.setItem(this.props.name+'_qty', product_qty);
+    this.props.onProductQtyChange(this.props.name, product_qty);
+    this.setState({product_qty: product_qty});
   }
 
   removeItem() {
-    console.log("removed one " + this.props.title)
-    var prev_total = parseInt(localStorage.getItem('total') || '0')
-    localStorage.setItem('total', prev_total-1)
-    this.props.quantity = parseInt(localStorage.getItem(this.props.title+'_qty') || '0') - 1
-    localStorage.setItem(this.props.title+'_qty', this.props.quantity)
+    var prev_product_qty = parseInt(localStorage.getItem(this.props.name+'_qty'), 10);
+    if (prev_product_qty > 0) {
+      console.log("removed one " + this.props.title);
+      var prev_total = parseInt(localStorage.getItem('total'), 10);
+      localStorage.setItem('total', Math.max(prev_total-1, 0));
+      this.props.onQtyChange(Math.max(prev_total-1, 0));
+      var product_qty = Math.max(parseInt(localStorage.getItem(this.props.name+'_qty'), 10) - 1, 0);
+      localStorage.setItem(this.props.name+'_qty', product_qty);
+      this.props.onProductQtyChange(this.props.name, product_qty);
+      this.setState({product_qty: product_qty});
+    }
   }
 
   render() {
@@ -29,7 +42,7 @@ class StoreItem extends Component{
         <div className="productLabel">
           <p className="productTitle" onClick = {this.props.onClick}>{this.props.title}</p>
           <p>Price: ${this.props.price}</p>
-          <p>Qty: <button className="removeItem" onClick={this.removeItem.bind(this)}>-</button> {this.props.quantity} <button className="addItem" onClick={this.addItem.bind(this)}>+</button></p>
+          <p>Qty: <button className="removeItem" onClick={this.removeItem.bind(this)}>-</button> {this.state.product_qty} <button className="addItem" onClick={this.addItem.bind(this)}>+</button></p>
         </div>
       </div>
     );

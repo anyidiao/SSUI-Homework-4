@@ -104,6 +104,13 @@
   width: 100%;
 }
 
+.smallProductImage {
+  margin-left: 5px;
+  margin-top: 5px;
+  width: 20%;
+  float: left;
+}
+
 .productLabel p {
   text-align: center;
   font-size: 14px;
@@ -152,6 +159,20 @@
   box-shadow: 2px 0px 2px #e0e0e0;
   padding: 10px;
   padding-top: 100px;
+}
+
+.shoppingCartPane {
+  position: fixed;
+  width: 30%;
+  height: 100%;
+  top: 50px;
+  right: 10px;
+  background-color: rgba(178, 90, 134, 0.8);
+  border-right: 3px solid black;
+  box-shadow: 2px 0px 2px #e0e0e0;
+  padding: 10px;
+  padding-top: 10px;
+  text-align: center;
 }
 
 .detailPane-inner{
@@ -316,4 +337,31 @@ form {
 
 li {
   text-align: left;
+}
+
+.cartItem {
+  border: 3px solid lightgrey;
+  color: lightyellow;
+  float: left;
+  background-color: white;
+}
+
+.paneTitle {
+  font-size: 26px;
+  font-family: "Comic Sans MS";
+  color: white;
+  text-align: center;
+}
+
+.subtitle {
+  color:white;
+  font-size: 22px;
+  font-family: "Comic Sans MS";
+  text-align: center;
+}
+
+.itemTitle {
+  font-size: 16px;
+  font-weight: bold;
+  font-family: "Comic Sans MS";
 }
